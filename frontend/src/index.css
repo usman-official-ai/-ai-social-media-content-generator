@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink text-paper font-body antialiased;
+    background-image: radial-gradient(circle at 1px 1px, rgba(237,234,226,0.05) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+  ::selection {
+    @apply bg-amber text-ink;
+  }
+  :focus-visible {
+    outline: 2px solid #F0A83B;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[11px] tracking-[0.22em] uppercase text-amber/90;
+  }
+  .card {
+    @apply bg-ink-light border border-rule rounded-md;
+  }
+  .input-field {
+    @apply w-full bg-ink border border-rule rounded px-3 py-2 text-sm text-paper
+      placeholder:text-paper/30 focus:border-amber focus:ring-1 focus:ring-amber
+      outline-none transition-colors;
+  }
+  .label {
+    @apply font-mono text-[11px] tracking-[0.12em] uppercase text-paper/50 mb-1.5 block;
+  }
+  .btn-primary {
+    @apply bg-amber text-ink font-semibold text-sm rounded px-5 py-2.5
+      hover:bg-amber-dim transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-ghost {
+    @apply border border-rule text-paper/80 text-sm rounded px-3 py-1.5
+      hover:border-amber hover:text-amber transition-colors;
+  }
+}
+
+@keyframes wire-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-wire {
+  animation: wire-scroll 28s linear infinite;
+}
