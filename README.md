@@ -1,4 +1,7 @@
-# The Content Wire — AI Social Media Content Generator
+# The Content Wire — AI Social Media Content Generator  
+
+   <img width="1536" height="1024" alt="ChatGPT Image Jul 29, 2026, 09_50_50 PM" src="https://github.com/user-attachments/assets/7c96cf98-6c92-4f9c-9e7a-8e4fdbfbc1ce" />    
+   
 
 An AI-powered web app that turns a few business details into ready-to-post
 social media content: captions (short/medium/long), hashtags, a call-to-action,
@@ -14,7 +17,7 @@ API**, and a **React + Tailwind CSS** frontend.
 
 ---
 
-## ✨ Features
+## ✨ Features  
 
 | Feature | Description |
 |---|---|
