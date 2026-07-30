@@ -6,8 +6,11 @@ an AI image prompt, A/B/C variations, a content calendar, SEO keywords, and a
 best-time-to-post suggestion — for Facebook, Instagram, LinkedIn, or Twitter/X,
 in English or Urdu.
 
-Built as a full-stack project: **FastAPI** backend calling the **Google Gemini
-API**, and a **React + Tailwind CSS** frontend.
+Built as a full-stack project: **Flask** backend calling the **Groq 
+API**, and a **React + Tailwind CSS** frontend.  
+
+**Frontend (Live):**  
+[https://ai-social-media-content-generator-phi.vercel.app](https://ai-social-media-content-generator-phi.vercel.app)
 
 ---
 
